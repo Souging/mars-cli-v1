@@ -24,12 +24,12 @@ do
 
     # 如果ore数量小于 0.1，则跳过当前文件并继续处理下一个文件
     if (( $(echo "$number < 0.01" | bc -l) )); then
-        echo "ORE小于 0.01，跳过Chaim钱包: $filename"
+        echo "MARS小于 0.01，跳过Chaim钱包: $filename"
         continue
     fi
 
     # 将文件名和数字打印出来
-    echo "钱包: $filename, ORE: $number"
+    echo "钱包: $filename, MARS: $number"
 
     # 组装命令并执行
     ~/mars-cli/target/release/mars --rpc "$rpc_url" --keypair "$filename" --priority-fee "$priority_fee" claim $number $claim_address
