@@ -81,7 +81,14 @@ claim:
 归集到主号
 给脚本执行权限 chmod +x claim.sh
 
+一定要修改好sh里面的目录
 修改claim.sh中的claim_address和rpc_url
 
-然后执行此命令归集orz/root/mars-cli-v1/claim.sh
+然后执行此命令归集   /root/mars-cli-v1/claim.sh
+
+
+查询和归集脚本来自:
+https://github.com/CoolkHz/orz-cli-gpu/
+
+
 
